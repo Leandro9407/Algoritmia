@@ -7,7 +7,7 @@ Algoritmo EjercicioCliente
 	iva=articulo*0.19
 	descuento=articulo*0.15
 	
-	resultado_descuento= articulo-descuento
+	resultado_descuento= (articulo-descuento)+iva
 	cambio= cliente-resultado_descuento
 	
 	Escribir "El iva incluido en el articulo es de: ", iva
