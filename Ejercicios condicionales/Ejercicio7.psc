@@ -14,12 +14,15 @@ Algoritmo Ejercicio7
 	empresa= monto*0.7
 	fabricante= monto*0.3
 	interes_fabricante= fabricante*0.2
+	total= empresa+interes_fabricante+fabricante
 	
 	Si monto<=500000
 		Escribir "Dinero invertido de la propia empresa: ", empresa
 		Escribir "Crédito solicitado al fabricante: ", fabricante
-	SiNo
 		Escribir "Pago de interes al fabricante: ", interes_fabricante
+		Escribir "El total a pagar es: ", total
+	SiNo
+		Escribir "La empresa paga el total de la compra ", monto
 	FinSi
 	
 FinAlgoritmo
