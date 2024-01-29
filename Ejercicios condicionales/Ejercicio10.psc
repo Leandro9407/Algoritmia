@@ -9,5 +9,26 @@
 //f. Si sólo cumple la segunda condición, grado 7.
 //g. Si cumple las dos condiciones, grado 8.
 Algoritmo Ejercicio10
+	Escribir "Digite el números de tornillos producidos"
+	Leer tornillos
 	
+	Si tornillos>=200 y tornillos<=10000 Entonces
+		Escribir "No produciste menos de 200 tornillos ni mas de 10.000 tornillos: GRADO 5"
+	SiNo
+		
+		Si tornillos<=200 Entonces
+			Escribir "Produciste menos de 200 tornillos: GRADO 6"
+		SiNo
+			
+			Si tornillos>=10000 Entonces
+				Escribir "Produciste mas de 10.000 tornillos: GRADO 7"
+			SiNo
+				
+				Si tornillos<=200 y tornillos>=10000 Entonces
+					Escribir "Produciste menos de 200 tornillos y más de 10000 tornillos: GRADO 8"
+					
+				FinSi
+			FinSi
+		FinSi
+	FinSi
 FinAlgoritmo

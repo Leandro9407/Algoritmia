@@ -18,51 +18,85 @@ Algoritmo Ejercicio9
 	sueldo1=horas*diurno
 	sueldo2=horas*nocturno
 	
-	Si sueldo1>800000 y dias_fiesta=1 Entonces
+	Si sueldo1>800001 y turno=1 y dias_fiesta=1 Entonces
 		descuento= sueldo1*0.1
-		total= (descuento-sueldo1)+aumento
 		aumento=sueldo1*0.15
+		total= sueldo1+aumento-descuento
+		
+		Escribir "Su sueldo sin descuento ni aumentos es: ", sueldo1
 		Escribir "Su descuento del 10% por ganar más de $800.000 es: ", descuento
 		Escribir "Por trabajar domingos y festivos tienes un aumento del 15%: ", aumento 
 		Escribir "Su sueldo total con el descuento y el aumento es: ", total
 		
 	SiNo
 		
-		
-		Si sueldo1>800000 y dias_fiesta=2 Entonces
-			descuento= sueldo1*0.1
-			total= descuento-sueldo1
-			Escribir "Su descuento del 10% por ganar más de $800.000 es: ", descuento
-			Escribir "Su sueldo total con el descuento y el aumento es: ", total
+		Si sueldo1<=800000 y turno=1 y dias_fiesta=1 Entonces
+			aumento=sueldo1*0.15
+			total= sueldo1+aumento
+			
+			Escribir "Su sueldo sin aumentos es: ", sueldo1
+			Escribir "Por trabajar domingos y festivos tienes un aumento del 15%: ", aumento
+			Escribir "Su sueldo con el aumento del 15% es: ", total
 			
 		SiNo
 			
-			
-			Si sueldo2>800000 y dias_fiesta=1 Entonces
-				descuento= sueldo2*0.1
-				total= (descuento-sueldo2)+aumento
-				aumento=sueldo2*0.15
+			Si sueldo1>800001 y turno=1 y dias_fiesta=2 Entonces
+				descuento= sueldo1*0.1
+				total= sueldo1-descuento
+				
+				Escribir "Su sueldo sin descuento es: ", sueldo1
 				Escribir "Su descuento del 10% por ganar más de $800.000 es: ", descuento
-				Escribir "Por trabajar domingos y festivos tienes un aumento del 15%: ", aumento 
 				Escribir "Su sueldo total con el descuento es: ", total
 				
 			SiNo
 				
-				
-				Si sueldo2>800000 y dias_fiesta=2 Entonces
-					descuento= sueldo2*0.1
-					total= descuento-sueldo2
-					Escribir "Su descuento del 10% por ganar más de $800.000 es: ", descuento
-					Escribir "Su sueldo total con el descuento es: ", total
+				Si sueldo1<=800000 y turno=1 y dias_fiesta=2 Entonces
+					
+					Escribir "Su sueldo sin descuento ni aumento es: ", sueldo1
+					
 				SiNo
 					
-					
-					
-					
-					
-					
-					
-					
+					Si sueldo2>800001 y turno=2 y dias_fiesta=1 Entonces
+						descuento= sueldo2*0.1
+						aumento=sueldo2*0.15
+						total= sueldo2+aumento-descuento
+						
+						Escribir "Su sueldo sin descuento ni aumento es: ", sueldo2
+						Escribir "Su descuento del 10% por ganar más de $800.000 es: ", descuento
+						Escribir "Por trabajar domingos y festivos tienes un aumento del 15%: ", aumento 
+						Escribir "Su sueldo total con el descuento es: ", total
+						
+					SiNo
+						
+						Si sueldo2<=800000 y turno=2 y dias_fiesta=1 Entonces
+							aumento=sueldo2*0.15
+							total=sueldo2+aumento
+							
+							Escribir "Su sueldo sin aumentos es: ", sueldo2
+							Escribir "Por trabajar domingos y festivos tienes un aumento del 15%: ", aumento
+							Escribir "Su sueldo con el aumento del 15% es: ", total
+							
+						Sino
+							
+							Si sueldo2>800001 y turno=2 y dias_fiesta=2 Entonces
+								descuento= sueldo2*0.1
+								total= sueldo2-descuento
+								
+								Escribir "Su sueldo sin descuento es: ", sueldo2
+								Escribir "Su descuento del 10% por ganar más de $800.000 es: ", descuento
+								Escribir "Su sueldo total con el descuento es: ", total
+							SiNo
+								
+								Si sueldo2<=800000 y turno=2 y dias_fiesta=2 Entonces
+									
+									Escribir "Su sueldo sin descuento ni aumento es: ", sueldo2
+									
+									
+									
+								FinSi
+							FinSi
+						FinSi
+					FinSi
 				FinSi
 			FinSi
 		FinSi
