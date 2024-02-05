@@ -38,23 +38,21 @@ Algoritmo Ejercicio20
 	ventas=precio1+precio2+precio3+precio4+precio5
 	Escribir "Total precios artículo: $", ventas
 	
+	Escribir "Digite cantidad total de artículos en el inventario"
+	Leer inventario
+	
 	Escribir "Digite cantidad de artículos vendidos"
 	leer articulos
 	
-	Si articulos=1 Entonces
+	Si inventario>=articulos Entonces
 		
-		Escribir "Digite artículo vendido"
-		leer vendido
-		Si vendido=articulo1 y articulo1=precio1 o vendido=articulo2 o vendido=articulo3 o vendido=articulo4 o vendido=articulo5 Entonces
-			Escribir "Articulo vendido: ", vendido ": $"
-		FinSi
+		Escribir "Cantidad total de artículos en el inventario ", inventario
+		Escribir "Cantidad total de artículos vendidos ", articulos
+		Escribir "Ganancia de la ferreteria es: $", ventas
+		
 	SiNo
-	
-		si articulos=2
-			Escribir "Digite artículos venido"
-			Escribir "Digite artículos venido"
-		FinSi
 		
+		Escribir "Los artículos son insuficientes"
 	FinSi
 	
 	
