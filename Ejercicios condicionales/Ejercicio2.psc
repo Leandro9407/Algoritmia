@@ -7,12 +7,12 @@ Algoritmo EjercicioDos
 	
 	descuento= compra*0.2
 	
-	Si compra>=100000
-		con_descuento= (compra-descuento)
-		Escribir "Su descuento es de: ", descuento
-		Escribir "Haz superado los 100.000, su valor a pagar es: ", con_descuento
+	Si compra>100000
+		con_descuento= compra-descuento
+		Escribir "Su descuento es del 20%: $", descuento
+		Escribir "Haz superado los 100.000, su valor a pagar es: $", con_descuento
 	Sino 
-		Escribir "No tienes descuento, su valor a pagar es ", compra
+		Escribir "No tiene descuento, su valor a pagar es: $", compra
 	FinSi
 	
 FinAlgoritmo

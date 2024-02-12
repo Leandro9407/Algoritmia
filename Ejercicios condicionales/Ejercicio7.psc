@@ -1,7 +1,7 @@
 //Una empresa quiere hacer una compra de varias piezas de la misma clase de refacciones.
 //La empresa, dependiendo del monto total de la compra, decidirá qué hacer para pagar al
 //fabricante.
-//a. -Si el monto total de la compra no excede de $500.000 la empresa tendrá
+//a. -Si el monto total de la compra no excede de $500.000 la empresa tendrá 
 //capacidad de invertir de su propio dinero un 70% y el restante 30% lo pagará
 //solicitando crédito al fabricante.
 //b. El fabricante cobra por concepto de intereses un 20% sobre la cantidad que se le

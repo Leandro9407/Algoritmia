@@ -1,17 +1,18 @@
 // Dado un tiempo en minutos, calcular los días, horas y minutos que le corresponden
 Algoritmo Ejercicio41
 	Escribir "ingrese minutos"
-	leer minutos_t
+	leer tiempo
 	
-	hora=60
-	dia=hora*24
+	minutos=60
+	horas=1
+	dias=24
 	
+	total_m=redon(tiempo/minutos)	 
+	total_h=redon(total_m/horas) 
+	total_d= redon(total_h/dias)
 	
-	minutos_h=minutos_t*hora
-	minutos_d=minutos_h*24
-	
-	Escribir "minutos: ", minutos_t
-	Escribir "Horas: ", minutos_h
-	Escribir "Días: ", minutos_d
+	Escribir "Minutos: ", total_m
+	Escribir "Horas: ", total_h
+	Escribir "Días: ", total_d
 	
 FinAlgoritmo

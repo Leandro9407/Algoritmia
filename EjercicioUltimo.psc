@@ -1,25 +1,24 @@
-//Determinar a travez de un precio y cantidad de un producto, cuanto debe pagar un 10% si el valor a pagar sobrepasa los 100.000
+//Determinar a travez de un precio y cantidad de un producto, cuanto debe pagar.
+//Un 10% si el valor a pagar sobrepasa los 100.000
 Algoritmo EjercicioUltimo
-	Escribir "Ingrese el precio del producto"
-	Leer  precio_art
-	Escribir  "ingrese la cantidad a comprar"
+	Escribir "Digite precio del artículo"
+	leer precio
+	Escribir "Ingrese la cantidad de artículos a comprar"
 	Leer cantidad
-	Escribir "Ingrese el valor dado por el cliente"
-	leer cliente
 	
-	valor_pagar=precio_art*cantidad
-	cambio=total_pagar-cliente
-	cambio2=valor_pagar-cliente
+	total_pagar=precio*cantidad
+	descuento=total_pagar*0.10
 	
-	Si valor_pagar>100000 Entonces
-		descuento=valor_pagar*0.1
-		total_pagar=valor_pagar-descuento
-		Escribir "Este es el descuento ", descuento
-		Escribir "Este es el valor a pagar ", total_pagar
-		Escribir "Su cambio es ", cambio
+	Si total_pagar>100000 Entonces
+		total_descuento=total_pagar-descuento
+		
+		Escribir "Su descuento del 10% por compra superior a 100.000 es: $", descuento
+		Escribir "Total a pagar, descuento incluido: ", total_descuento
+		
 	SiNo
-		Escribir "Este es su valor a pagar ", valor_pagar
-		Escribir "Su cambio es ", cambio2
+		
+		Escribir "Comprar inferior a 100.000, no tiene descuento, total a pagar: $", total_pagar
+		
 	FinSi
 	
 	

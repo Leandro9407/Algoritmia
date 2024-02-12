@@ -2,9 +2,9 @@ Algoritmo 	Ejercicio6
 	Escribir "Digite el salario"
 	Leer salario
 	
-	incremento= salario+(salario*0.08)
+	incremento= (salario*0.08)+salario
 	
-	Escribir  "El incremento del salario es de ", incremento 
+	Escribir  "El incremento del salario con el 8% es de $", incremento 
 	
 	
 FinAlgoritmo
