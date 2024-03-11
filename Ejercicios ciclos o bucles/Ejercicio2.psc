@@ -2,19 +2,20 @@
 //y su calificación en cada una de las 3 pruebas evaluativas. Al final que escriba el nombre y
 //promedio del alumno que obtuvo mayor promedio. Suponga que los alumnos tienen
 //diferentes promedios
-Algoritmo PromedioAlumnos
+Algoritmo Ejercicio2
 	Escribir "Ingrese número de alumnos"
 	leer alumnos
 	
 	aux=0
+	
 	Para i<-1 Hasta alumnos Con Paso 1 Hacer
 		Escribir "Ingrese nombre"
 		leer nombre
 		Escribir "Ingrese código"
 		leer codigo
-		Escribir "Ingrese calificación de la primera prueba ", i
+		Escribir "Ingrese calificación de la primera prueba "
 		leer cali_1
-		Escribir "Ingrese calificación de la segunda prueba ", i
+		Escribir "Ingrese calificación de la segunda prueba " 
 		leer cali_2
 		Escribir "Ingrese calificación de la tercera prueba"
 		leer cali_3
