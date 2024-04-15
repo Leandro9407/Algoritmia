@@ -43,17 +43,20 @@ Algoritmo ProvedoresVentas
 		leer alimentacion
 		Escribir "Ingrese gastos arriendo"
 		leer arriendo
+		Escribir "Ingrese prestamos a empleados"
+		leer prestamos
 		Escribir ""
 		
 		Escribir "________  EGRESADO-ENTRADO _________"
 		Escribir "Ingrese total de ventas"
 		leer ventas
-		Escribir "Ingrese prestamos a empleados"
-		leer prestamos
+		Escribir "Valor de prestamos a empleado: $", prestamos
+		Escribir "Ingrese valor-prestamos recuperado de empleados"
+		leer recuperado
 		Escribir ""
 		
-		dinero_salida=tota_total+aseo+alimentacion+arriendo
-		dinero_egresado=ventas+prestamos
+		dinero_salida=tota_total+aseo+alimentacion+arriendo+prestamos
+		dinero_egresado=ventas+recuperado
 		
 		
 		Escribir "____________  BALANCE  ____________"

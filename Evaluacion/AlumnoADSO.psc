@@ -149,19 +149,19 @@ Algoritmo AlumnoADSO
 	Escribir "Promedio BASE DE DATOS: ", mejor_base
 	Escribir "_                             _"
 	
-	Si mejor_python=mejor_php o mejor_python=mejor_java o mejor_python=mejor_base Entonces
+	Si n_python=n_php o n_python=n_java o n_python=n_base Entonces
 		Escribir "DESCUENTO DEL 30% PARA EL PROXIMO SEMESTRE"
 		Escribir "¡FELICIDADES ", n_python "!"
 	SiNo
-		Si mejor_php=mejor_python o mejor_php=mejor_java o mejor_php=mejor_base Entonces
+		Si n_php=n_python o n_php=n_java o n_php=n_base Entonces
 			Escribir "DESCUENTO DEL 30% PARA EL PROXIMO SEMESTRE"
 			Escribir "¡FELICIDADES ", n_php "!"
 		SiNo
-			Si mejor_java=mejor_python o mejor_java=mejor_php o mejor_java=mejor_base Entonces
+			Si n_java=n_python o n_java=n_php o n_java=n_base Entonces
 				Escribir "DESCUENTO DEL 30% PARA EL PROXIMO SEMESTRE"	
 				Escribir "¡FELICIDADES ", n_java "!"
 			SiNo
-				Si mejor_base=mejor_python o mejor_base=mejor_php o mejor_base=mejor_java Entonces
+				Si n_base=n_python o n_base=n_php o n_base=n_java Entonces
 					Escribir "DESCUENTO DEL 30% PARA EL PROXIMO SEMESTRE"
 					Escribir "¡FELICIDADES ", n_base "!"
 				FinSi
