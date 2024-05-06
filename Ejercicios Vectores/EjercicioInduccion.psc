@@ -1,6 +1,5 @@
 Algoritmo EjercicioInduccion
-	Escribir "Ingrese la dimesión del vector"
-	leer n
+
 	Dimension A[3]
 	Dimension B[3]
 	Dimension suma[3]

@@ -14,7 +14,7 @@ Algoritmo Ejercicio2
 		Escribir "Ingrese número a determinar"
 		leer b[i]
 		
-		Si b[i]=a[i] Entonces
+		Si a[i]=b[i] Entonces
 			Escribir "El número esta en el vector"
 		SiNo
 			Escribir "El número no esta en el vector"
