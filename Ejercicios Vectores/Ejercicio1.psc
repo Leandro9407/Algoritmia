@@ -1,19 +1,34 @@
-Algoritmo Ejercicio1
+//Queremos guardar los nombres y las edades de los alumnos de un curso. Realiza un
+//programa que introduzca el nombre y la edad de cada alumno. El proceso de lectura de
+//datos terminará cuando se introduzca como nombre un asterisco (*) Al finalizar se
+//mostrará los siguientes datos:
+//+ Todos los alumnos mayores de edad.
+//+ Los alumnos mayores (los que tienen más edad)
+Algoritmo  Ejercicio1
 	
-	Dimension A[15]
-	Dimension B[15]
-	Dimension suma[15]
+	Dimension nombres[100]
+	Dimension edades[100]
 	
-	Para i<-0 Hasta 14 Con Paso 1 Hacer
-		Escribir "Ingrese los números al vector A, de la posición: ", i
-		leer A[i]
-		Escribir "Ingrese los números al vector B, de la posición: ", i
-		Leer B[i]
-	FinPara
+	cont=0
 	
-	Para i<-0 Hasta 14 Con Paso 1 Hacer
-		suma[i]=A[i]+B[i]
-		Escribir "Esta es la suma de los dos vectores: ", suma[i]
-	FinPara
+	Mientras nombres[cont] <> "*" Hacer
+		Escribir "Digite nombre del estudiante"
+		leer nombres[cont]
+		Si nombres[cont] <> "*" Entonces
+			Escribir "Ingrese edad del estudiante"
+			leer edades[cont]
+			cont=cont+1
+		FinSi
+	FinMientras
 	
+		
+	Para i<-0 Hasta cont Con Paso 1 Hacer
+		Si edades[i]>17 Entonces
+			Escribir nombres[i] ": ", edades[i]
+		FinSi
+		Fin Para
+		
+		
+		
 FinAlgoritmo
+

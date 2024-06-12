@@ -6,20 +6,29 @@ Algoritmo Ejercicio5
 	
 	Para i<-0 Hasta 8 Con Paso 1 Hacer
 		
-		jeans[0]<-"a"
-		jeans[1]<-"b"
-		jeans[2]<-"c"
-		jeans[3]<-"d"
-		jeans[4]<-"e"
-		jeans[5]<-"f"
-		jeans[6]<-"g"
-		jeans[7]<-"h"
-		jeans[8]<-"i"
+		jeans[0]<-"Levis"
+		jeans[1]<-"Wrangler, "
+		jeans[2]<-"Lee"
+		jeans[3]<-"Calvin Klein Jeans, "
+		jeans[4]<-"Guess"
+		jeans[5]<-"Diesel"
+		jeans[6]<-"True Religion"
+		jeans[7]<-"American Eagle Outfitters"
+		jeans[8]<-"AG Jeans"
 		
-		jeans[1]<-"a,j"
-		jeans[3]<-"d,k"
+		Escribir "Ingrese la primera nueva marca de jeans"
+		leer marca_1
+		Escribir "Ingrese la segunda nueva marca de jeans"
+		leer marca_2
 		
-		Escribir "Jeans ",i ": " jeans[i]
+		jeans[1]=jeans[1]+marca_1
+		jeans[3]=jeans[3]+marca_2
+		
+		Para i<-0 Hasta 8 Con Paso 1 Hacer
+			Escribir "Jeans ",i ": " jeans[i]
+		Fin Para
+		
+		
 		
 	Fin Para
 	

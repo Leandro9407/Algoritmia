@@ -18,6 +18,7 @@ Algoritmo Ejercicio1
 	
 	
 	Para i<-0 Hasta s-1 Con Paso 1 Hacer
+		Escribir "___________ Sucursal ", i+1 " __________"
 		Para j<-0 Hasta p-1 Con Paso 1 Hacer
 			Escribir "Ingrese numero de piezas f:" i " c:",j
 			leer almacen[i,j]
